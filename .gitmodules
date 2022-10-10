@@ -1,3 +1,9 @@
 [submodule "repo game 2/Assets/scripts"]
 	path = repo game 2/Assets/scripts
 	url = https://github.com/skindin/scripts
+[submodule "NewGame/scripts"]
+	path = NewGame/scripts
+	url = https://github.com/skindin/scripts
+[submodule "NewGame/Assets/scripts"]
+	path = NewGame/Assets/scripts
+	url = https://github.com/skindin/scripts
