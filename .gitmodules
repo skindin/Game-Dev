@@ -1,0 +1,3 @@
+[submodule "NewGame/Assets/scripts"]
+	path = NewGame/Assets/scripts
+	url = https://github.com/skindin/scripts/tree/64f3af00ce891768885f790a1b8407dc091e557d

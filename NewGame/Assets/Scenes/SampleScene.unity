@@ -311,10 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ea9a0ae21cf074ea58ac17aad12721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleDirections: 4
   touching: 0
   sensitivity: 1
-  startPos: {x: 0, y: 0}
   pointerDown:
     m_PersistentCalls:
       m_Calls:
@@ -335,7 +333,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8766145}
         m_TargetAssemblyTypeName: PieceMovement, Assembly-CSharp
-        m_MethodName: SetDirection
+        m_MethodName: SelectNewTile
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -360,7 +358,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  direction: {fileID: 0}
 --- !u!114 &487732221
 MonoBehaviour:
   m_ObjectHideFlags: 0
