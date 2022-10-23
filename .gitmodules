@@ -1,6 +1,0 @@
-[submodule "NewGame/scripts"]
-	path = NewGame/scripts
-	url = https://github.com/skindin/scripts
-[submodule "NewGame/Assets/scripts"]
-	path = NewGame/Assets/scripts
-	url = https://github.com/skindin/scripts
