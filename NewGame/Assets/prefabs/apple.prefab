@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5666603672922677267}
   - component: {fileID: 1743978352617743816}
   - component: {fileID: 802677874387696713}
+  - component: {fileID: 4992238543055380089}
   m_Layer: 0
-  m_Name: consumable
+  m_Name: apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,8 +51,9 @@ MonoBehaviour:
   size: 1
   mainTile: {fileID: 0}
   item: {fileID: 802677874387696713}
+  charPiece: {fileID: 0}
   ids:
-  - {fileID: 11400000, guid: f177c3f1a2979ff4f874996b34df4916, type: 2}
+  - {fileID: 11400000, guid: daff4d058542641428c779ac59f90fd7, type: 2}
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &802677874387696713
 MonoBehaviour:
@@ -66,13 +68,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piece: {fileID: 1743978352617743816}
-  value: 3
+  statID: {fileID: 11400000, guid: daff4d058542641428c779ac59f90fd7, type: 2}
+  stat: {fileID: 4992238543055380089}
   collectEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 802677874387696713}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
-        m_MethodName: AddMoves
+        m_MethodName: AddStat
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -94,8 +97,8 @@ MonoBehaviour:
           m_StringArgument: popOut
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 802677874387696713}
-        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+      - m_Target: {fileID: 1743978352617743816}
+        m_TargetAssemblyTypeName: Piece, Assembly-CSharp
         m_MethodName: Destroy
         m_Mode: 4
         m_Arguments:
@@ -118,6 +121,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4992238543055380089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044054958906447169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e47a6c2e6bc6d54e8405bba3681d8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  id: {fileID: 11400000, guid: daff4d058542641428c779ac59f90fd7, type: 2}
+  min: 0
+  max: 10
+  value: 1
+  statText: {fileID: 0}
+  prefix: 
+  suffix: 
 --- !u!1 &2057016936990368552
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1337177472579994497
 Transform:
   m_ObjectHideFlags: 0
