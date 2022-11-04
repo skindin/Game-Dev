@@ -544,7 +544,8 @@ MonoBehaviour:
   mainTile: {fileID: 0}
   item: {fileID: 4667935978085787885}
   charPiece: {fileID: 1841950832232978313}
-  ids: []
+  ids:
+  - {fileID: 11400000, guid: 17fb5f2dfb9d433448204f00a85bdd15, type: 2}
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &1841950832232978313
 MonoBehaviour:
@@ -722,7 +723,7 @@ MonoBehaviour:
   rotateDuration: 0.1
   iterationLength: 0.03
   moves: {fileID: 7385456184267809609}
-  maxMovesPerTurn: 3
+  maxMovesPerTurn: 2
   health: {fileID: 8884750236013990122}
   strength: {fileID: 0}
   stats: []
@@ -745,6 +746,7 @@ MonoBehaviour:
   targetIDs:
   - {fileID: 11400000, guid: f177c3f1a2979ff4f874996b34df4916, type: 2}
   avoidIDs: []
+  targetPiece: {fileID: 0}
   searchRadius: 5
   wander: 1
 --- !u!114 &1841950832232978309
@@ -1171,7 +1173,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1339,7 +1341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a34b97361d9794a906cb1bacbf22f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0.52156866, b: 0.5058824, a: 0.5}
+  m_EffectColor: {r: 1, g: 0.52156866, b: 0.5058824, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
   m_circleCount: 2
