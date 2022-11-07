@@ -62,6 +62,6 @@ MonoBehaviour:
   bkgrndPrfb: {fileID: 2078960656726984137, guid: 0d5e4d2ece9af35419006805b478296c, type: 3}
   icon: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 1}
-  spaceBetween: 10
+  spaceBetween: 5
   maxPerRow: 5
   icons: []
